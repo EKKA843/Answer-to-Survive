@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Mitr:wght@400;500;600&family=Anuphan:wght@400;500;600&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Mitr", "Anuphan", sans-serif;
+  --font-body: "Anuphan", sans-serif;
+
+  --color-ink: #1B1F2A;     /* ตัวอักษรหลัก */
+  --color-muted: #6A7285;   /* ตัวอักษรรอง */
+  --color-line: #DCE1EA;    /* เส้นขอบ */
+  --color-chat: #EDF1F7;    /* พื้นห้องแชท */
+  --color-chip: #E6EAF2;    /* วงกลม ก ข ค ง */
+  --color-me: #2F6BFF;      /* ฟองแชทของเรา */
+  --color-accent: #FF3D6E;  /* ปุ่มหลัก */
+  --color-good: #12A36A;
+  --color-warn: #E09A10;
+  --color-bad: #E0344B;
+}
+
+body {
+  font-family: var(--font-body);
+  background: #EEF1F6;
+  color: var(--color-ink);
+}
+
+@keyframes pop {
+  from { opacity: 0; transform: translateY(6px) scale(0.97); }
+  to   { opacity: 1; transform: none; }
+}
+.animate-pop { animation: pop 0.25s ease both; }
